@@ -61,6 +61,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Syrian Forum Theme Colors
+				forum: {
+					primary: '#34A853', // Green symbolizing hope and growth
+					light: '#F1F5F9', // Light gray for backgrounds
+					dark: '#1F2937', // Dark gray for text
+					accent: '#D3E4FD', // Soft blue accent
+					success: '#0C8B51', // Darker green for success states
+					warning: '#F59E0B', // Amber for warnings
+					error: '#EF4444', // Red for errors
 				}
 			},
 			borderRadius: {
@@ -84,11 +94,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-subtle': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.8' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-subtle': 'pulse-subtle 2s ease-in-out infinite',
 			}
 		}
 	},
